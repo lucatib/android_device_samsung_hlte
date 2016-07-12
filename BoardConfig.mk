@@ -18,8 +18,8 @@
 TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hltetmo,SM-N900T,hltecan,SM-N900W8,hlteatt,SM-N900A,hlte,hlteskt,hltektt,SM-N900S,SM-N900K
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
+TARGET_INIT_VENDOR_LIB := libinit_msm8974
+TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Partitions
