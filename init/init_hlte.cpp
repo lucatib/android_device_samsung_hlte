@@ -31,7 +31,7 @@
 #include <stdio.h>
 
 #include "vendor_init.h"
-#include "property_service.h"
+#include <cutils/properties.h>
 #include "log.h"
 #include "util.h"
 
@@ -53,11 +53,11 @@ void init_target_properties()
     char devicename[PROP_VALUE_MAX];
     int rc;
 
-    rc = property_get("ro.board.platform", platform);
+    rc = property_get("ro.board.platform",platform,"");
     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
         return;
 
-    property_get("ro.bootloader", bootloader);
+    property_get("ro.bootloader",bootloader,"");
 
     if (strstr(bootloader, "N900S")) {
         /* hlteskt */
@@ -104,7 +104,7 @@ void init_target_properties()
         property_set("ro.product.device", "hltexx");
     }
 
-    property_get("ro.product.device", device);
+    property_get("ro.product.device",device,"");
     strlcpy(devicename, device, sizeof(devicename));
     ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
 }
