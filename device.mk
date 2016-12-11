@@ -15,9 +15,9 @@
 #
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.ota.romname=temasek-hlte \
+    ro.ota.romname=lt-hlte \
     ro.ota.version=$(shell date +%F | sed s@-@@g) \
-    ro.ota.manifest=http://temasek.rajasthanautoworks.in/ota/cm13/hlte.xml
+    ro.ota.manifest=https://drive.google.com/open?id=0B3GAjcG-Hb8RSldEVEhyOGJUMkU
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
