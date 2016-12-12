@@ -9,5 +9,5 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Custom unofficial build tag
 TARGET_UNOFFICIAL_BUILD_ID := lt
 
-PRODUCT_DEVICE := hlte
+PRODUCT_DEVICE := hltexx
 PRODUCT_NAME := cm_hlte
