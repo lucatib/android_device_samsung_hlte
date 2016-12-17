@@ -3,4 +3,4 @@ rild.libargs=-d /dev/smd0
 rild.libpath=/system/lib/libsec-ril.so
 
 # Temporary - Add fingerprint manually until it is corrected
-ro.build.fingerprint=samsung/hlte/hlte:5.0/LRX21V/N9005XXUGBOK6:user/release-keys
+ro.build.fingerprint=samsung/hltexx/hlte:5.0/LRX21V/N9005XXUGBOK6:user/release-keys
