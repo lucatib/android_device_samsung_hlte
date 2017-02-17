@@ -1,1 +1,1 @@
-add_lunch_combo cm_hlte-userdebug
+add_lunch_combo lineage_hlte-userdebug
